@@ -42,6 +42,7 @@
     methods: {
       addCarro(id) {
         this.$store.commit('addCarro', [id, this.tipo])
+        window.scrollTo(0, 0);
       }
     },
   }

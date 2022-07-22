@@ -11,7 +11,6 @@
 
 <script>
   // @ is an alias to /src
-  import {mapActions} from "vuex";
   import Carrousel from "@/components/Carrousel";
   import TiposVino from "@/components/TiposVino";
 

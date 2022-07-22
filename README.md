@@ -1,5 +1,10 @@
 # vinosmichile
 
+## Prueba de salida Bootcamp Desafiolatam talentoDigital
+### Front-End VueJs Vuex Vue Router
+### https://vinos-mi-chile.netlify.app/
+# Fernando Taladriz
+
 ## Project setup
 ```
 npm install
