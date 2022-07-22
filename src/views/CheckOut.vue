@@ -28,8 +28,8 @@
                        required>
               </div>
               <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input v-model.trim="telefono" type="text" class="form-control" id="telefono" placeholder="Teléfono"
+                <label for="telefono" class="form-label">Teléfono (solo números)</label>
+                <input v-model.trim="telefono" type="text" class="form-control" id="telefono" placeholder="56912345678"
                        required>
               </div>
 
@@ -145,7 +145,8 @@
         telefono: '',
         direccion: '',
         comuna: '',
-        expression: /\w+@\w+\.+[a-z]/
+        expression_email: /\w+@\w+\.+[a-z]/,
+        expression_telefono: /[0-9]+/,
       }
     },
     computed: {
@@ -158,8 +159,10 @@
           alert('Todos los campos son obligatorios.')
         } else if (this.email !== this.reemail) {
           alert('Los email ingresados no coinciden.')
-        } else if (!this.expression.test(this.email)) {
+        } else if (!this.expression_email.test(this.email)) {
           alert('Ingresa un email válido.')
+        } else if (!this.expression_telefono.test(this.telefono)) {
+          alert('Ingresa un teléfono válido.')
         } else {
           this.$router.push('/confirmacion')
         }

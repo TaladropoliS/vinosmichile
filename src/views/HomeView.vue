@@ -4,8 +4,8 @@
       <img class="logo img-fluid" alt="Vue logo" src="../assets/logo_n.png">
       <h2 class="pt-3">Vinos Mi Chile</h2>
     </div>
-    <Carrousel/>
-    <TiposVino/>
+        <Carrousel/>
+        <TiposVino/>
   </div>
 </template>
 

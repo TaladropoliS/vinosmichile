@@ -3,22 +3,24 @@
     <div id="carouselExampleIndicators" class="carousel slide py-3" data-bs-ride="carousel">
       <div id="fondo_carrousel" class="carousel-inner">
         <div class="carousel-item active">
-          <img :src="mejoresvinos[0]['imagen']" class="imgCarr d-block mx-auto" :alt="mejoresvinos[0]['titulo']">
+          <img src="../assets/img_carrousel/castillo_san_simon.jpg" class="imgCarr d-block mx-auto" alt="san simon">
         </div>
         <div class="carousel-item">
-          <img :src="mejoresvinos[1]['imagen']" class="imgCarr d-block mx-auto" :alt="mejoresvinos[1]['titulo']">
+          <img src="../assets/img_carrousel/chablis-louis-latour.jpg" class="imgCarr d-block mx-auto" alt="chablis">
         </div>
         <div class="carousel-item">
-          <img :src="mejoresvinos[2]['imagen']" class="imgCarr d-block mx-auto" :alt="mejoresvinos[2]['titulo']">
+          <img src="../assets/img_carrousel/vino_de_oporto_barros_tawny.jpg" class="imgCarr d-block mx-auto" alt="oporto">
         </div>
         <div class="carousel-item">
-          <img :src="mejoresvinos[3]['imagen']" class="imgCarr d-block mx-auto" :alt="mejoresvinos[3]['titulo']">
+          <img src="../assets/img_carrousel/vino-bardolino-tommasi-1w.jpg" class="imgCarr d-block mx-auto" alt="bardolino">
         </div>
         <div class="carousel-item">
-          <img :src="mejoresvinos[4]['imagen']" class="imgCarr d-block mx-auto" :alt="mejoresvinos[4]['titulo']">
+          <img src="../assets/img_carrousel/vino-cousino-macul-don-luis-chardonnay-1q.jpg" class="imgCarr d-block mx-auto"
+               alt="chardonnay">
         </div>
         <div class="carousel-item">
-          <img :src="mejoresvinos[5]['imagen']" class="imgCarr d-block mx-auto" :alt="mejoresvinos[5]['titulo']">
+          <img src="../assets/img_carrousel/vino-finca-moras-pinot-grigio-1w.jpg" class="imgCarr d-block mx-auto"
+               alt="pinot">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -38,8 +40,13 @@
 
   export default {
     name: "Carrousel",
+    data() {
+      return {
+        mostrar: false
+      }
+    },
     computed: {
-      ...mapState(['mejoresvinos'])
+      ...mapState(['mejoresvinos']),
     },
   }
 </script>
@@ -54,8 +61,4 @@
   height: 350px;
 }
 
-#titulo_vino {
-  background-color: rgba(0, 0, 0, 0.5);
-  text-shadow: 1px 2px black;
-}
 </style>
