@@ -1,0 +1,45 @@
+{
+  "mejoresvinos": [
+    {
+      "titulo": "Bardolino Tommasi",
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/home_vinos/vino-bardolino-tommasi-1w.jpg"
+    },
+    {
+      "titulo": "Chablis Louis Latour",
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/home_vinos/chablis-louis-latour.jpg"
+    },
+    {
+      "titulo": "Cousino Don Luis Chardonnay",
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/home_vinos/vino-cousino-macul-don-luis-chardonnay-1q.jpg"
+    },
+    {
+      "titulo": "Castillo San Simón",
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/home_vinos/castillo_san_simon.jpg"
+    },
+    {
+      "titulo": "Finca Las Moras Pinot Grigio",
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/home_vinos/vino-finca-moras-pinot-grigio-1w.jpg"
+    },
+    {
+      "titulo": "Oporto Barros Tawny",
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/home_vinos/vino_de_oporto_barros_tawny.jpg"
+    }
+  ],
+  "tiposvino": [
+    {
+      "nombre": "Vino Tinto",
+      "texto": "El vino tinto es un tipo de vino procedente mayormente de mostos de uvas tintas, con la elaboración pertinente para conseguir la difusión de la materia colorante que contienen los hollejos de la uva. En función del tiempo de envejecimiento que se realice en la barrica y en la botella, pueden obtenerse vinos jóvenes, crianzas, reservas o grandes reservas.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Red_Wine_Glass.jpg/321px-Red_Wine_Glass.jpg?20041230140448"
+    },
+    {
+      "nombre": "Vino Blanco",
+      "texto": "El vino blanco es una variedad de vino que puede oscilar entre las tonalidades amarillo pajizo, amarillo verdoso o amarillo oro. Se produce por la fermentación alcohólica de la pulpa no coloreada de uvas que pueden tener una piel de color blanco o negro, a fin de mantener un color amarillo transparente en el producto final. La amplia variedad de vinos blancos proviene de la gran cantidad de cepas y métodos de elaboración empleados, así como de la relación de azúcar residual.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/White_Wine_Glas.jpg/320px-White_Wine_Glas.jpg"
+    },
+    {
+      "nombre": "Vino Rosado",
+      "texto": "El vino rosado es aquel que tiene algo del color típico del vino tinto, pero solo lo suficiente como para darle un color rosa, que puede ir del claro al fuerte casi violeta, según las uvas y las técnicas de producción usadas.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Glass_of_ros%C3%A9.jpg/220px-Glass_of_ros%C3%A9.jpg"
+    }
+  ]
+}

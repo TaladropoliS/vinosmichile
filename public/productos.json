@@ -1,0 +1,113 @@
+{
+  "productos": [
+    {
+      "id": "1234",
+      "nombre": "Cabernet Sauvignon",
+      "descripcion": "Buen volumen en boca con una textura que llena el paladar",
+      "caracteristicas": [
+        "Cuerpo: Potente",
+        "Contenido: 750cc",
+        "Valle: Central"
+      ],
+      "precio_normal": 199000,
+      "precio_promo": 99000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/arg_las_moras_cabernet.webp"
+    },
+    {
+      "id": "5678",
+      "nombre": "Carmenere, Snowscent",
+      "descripcion": "Textura suave, taninos elegantes, entrega, frescor y frutosidad final",
+      "caracteristicas": [
+        "Cuerpo: Potente",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 179000,
+      "precio_promo": 80000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/carmenere-gran-reserva-snowscent.jpg"
+    },
+    {
+      "id": "9012",
+      "nombre": "Merlot Reserva",
+      "descripcion": "Sabroso en boca, de buena acidez que realza la fruta, taninos dulces y un final muy redondo",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Curicó"
+      ],
+      "precio_normal": 70000,
+      "precio_promo": 35000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/merlot-reserva-raices-vina-las-pitras-valle-de-curico.jpg"
+    },
+    {
+      "id": "3456",
+      "nombre": "Syrah Reserva",
+      "descripcion": "Jugoso y taninos firmes. La fruta se potencia con toques de café tostado, paladar de persistencia media y sensación dulce",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 71000,
+      "precio_promo": 43000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/syrah-reserva-privada-vina-aromo.jpg"
+    },
+    {
+      "id": "7890",
+      "nombre": "Malbec Reserva",
+      "descripcion": "Vino concentrado joven, taninos dulces pero presentes. En el retrogusto toques a café, moka y algo de humo",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 72000,
+      "precio_promo": 43000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/malbec-reserva-privada-vina-aromo.jpg"
+    },
+    {
+      "id": "9876",
+      "nombre": "Pinot Noir Reserva",
+      "descripcion": "Fresco, buena acidez en el retrogusto, fruta roja, toques de madera tipo toffe, sensación dulce",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 95000,
+      "precio_promo": 57000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/pinot-noir-reserva-dogma-vina-el-aromo-valle-del-maule.jpg"
+    },
+    {
+      "id": "5432",
+      "nombre": "Carignan Amplus Premium",
+      "descripcion": "Muy estructurado, de taninos abundantes y cremosos, con una acidez viva y refrescante",
+      "caracteristicas": [
+        "Cuerpo: Medio",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 227000,
+      "precio_promo": 159000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/carignan-amplus-premium-vina-santa-ema.jpg"
+    },
+    {
+      "id": "1098",
+      "nombre": "Pais Premium",
+      "descripcion": "Muy maduro, compacto, goloso, frutal y largo",
+      "caracteristicas": [
+        "Cuerpo: Medio",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 94000,
+      "precio_promo": 47000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/productos/pais-premium-encanto.jpg"
+    }
+  ],
+  "pagedResult": {
+    "page": 1,
+    "size": 10,
+    "total": 12
+  }
+}

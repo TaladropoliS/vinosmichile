@@ -1,0 +1,113 @@
+{
+  "productos": [
+    {
+      "id": "1111",
+      "nombre": "Chardonnay -PROMOCION-",
+      "descripcion": "Fresco, Equilibrado, Joven, y retrogusto dulce pero vibrante",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 71000,
+      "precio_promo": 43000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/chardonnay-reserva-privada-vina-el-aromo.jpg"
+    },
+    {
+      "id": "2222",
+      "nombre": "Sauvignon Blanc -PROMOCION-",
+      "descripcion": "Fresco, sabroso y de buen volumen. Atractivos sabores tropicales con buen balance de fruta y acidez",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 72000,
+      "precio_promo": 42000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/sauvignon-blanc-reserva-privada-vina-aromo.jpg"
+    },
+    {
+      "id": "3333",
+      "nombre": "Late Harvest -PROMOCION-",
+      "descripcion": "Sabor pleno, con excelente equilibrio y agradable acidez",
+      "caracteristicas": [
+        "Cuerpo: Medio",
+        "Contenido: 500cc",
+        "Valle: Colchagua"
+      ],
+      "precio_normal": 75000,
+      "precio_promo": 37000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/late-harvest-tierruca-vina-marchigue.jpg"
+    },
+    {
+      "id": "4444",
+      "nombre": "Gewürztraminer -PROMOCION-",
+      "descripcion": "Suave y redondo con un equilibrio entre la fruta y la acidez que se prolonga en un final seco y refrescante",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Curicó"
+      ],
+      "precio_normal": 79000,
+      "precio_promo": 38000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/gewuerztraminer-gran-reserva-trisquel.jpg"
+    },
+    {
+      "id": "5555",
+      "nombre": "Cabernet Sauvignon Conde De Marras -PROMOCION-",
+      "descripcion": "Buen volumen en boca con una textura que llena el paladar, de taninos finos y un largo final",
+      "caracteristicas": [
+        "Cuerpo: Potente",
+        "Contenido: 750cc",
+        "Valle: Central"
+      ],
+      "precio_normal": 155000,
+      "precio_promo": 62000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/cabernet-sauvignon-conde-de-marras-gran-reserva.jpg"
+    },
+    {
+      "id": "6666",
+      "nombre": "Riesling -PROMOCION-",
+      "descripcion": "De sensación dulce y afrutado en el paladar",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Central"
+      ],
+      "precio_normal": 35000,
+      "precio_promo": 25000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/riesling-reserva-intrepido-espiritu-de-chile.jpg"
+    },
+    {
+      "id": "7777",
+      "nombre": "Ensamblaje Blanco -PROMOCION-",
+      "descripcion": "Es muy redondo, generoso, equilibrado, con buena acidez. Final longo, fresco, y complejo",
+      "caracteristicas": [
+        "Cuerpo: Ligero",
+        "Contenido: 750cc",
+        "Valle: Lolol"
+      ],
+      "precio_normal": 287000,
+      "precio_promo": 116000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/ensamblaje-blanco-premium-clos-de-lolol.jpg"
+    },
+    {
+      "id": "8888",
+      "nombre": "Naranjo -PROMOCION-",
+      "descripcion": "Persistente en textura, frescor placentero y elegante final",
+      "caracteristicas": [
+        "Cuerpo: Potente",
+        "Contenido: 750cc",
+        "Valle: Maule"
+      ],
+      "precio_normal": 263000,
+      "precio_promo": 158000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/promocion/torontel-premium-naranjo-maturana-wines-valle-de-colchagua.jpg"
+    }
+  ],
+  "pagedResult": {
+    "page": 1,
+    "size": 10,
+    "total": 12
+  }
+}

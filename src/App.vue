@@ -1,10 +1,30 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavBar id="nav"/>
   <router-view/>
 </template>
+
+<script>
+  import {mapActions} from "vuex";
+  import NavBar from "@/components/NavBar";
+
+  export default {
+    components: {NavBar},
+    methods: {
+      ...mapActions([
+        'fetchVinosHome',
+        'fetchPromocion',
+        'fetchProductos',
+        'fetchAccesorios'
+      ])
+    },
+    created() {
+      this.fetchVinosHome()
+      this.fetchPromocion()
+      this.fetchProductos()
+      this.fetchAccesorios()
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
@@ -15,12 +35,12 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+#nav {
+  padding: 5px;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: rgba(255, 255, 255, 0.7);
 
     &.router-link-exact-active {
       color: #42b983;

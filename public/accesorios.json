@@ -1,0 +1,49 @@
+{
+  "productos": [
+    {
+      "id": "1212",
+      "nombre": "Copas Willsberger Burgundy",
+      "descripcion": "Excelente y elegante copa de Vino/Gin Willsberger Burgundy esta diseñada para albergar vinos tintos oscuros y estructurados o bien tragos preparados como Gin tonic, Aperol spritz o Ramazzoti Spritz o similares",
+      "precio_normal": 65000,
+      "precio_promo": 58000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/accesorios/copas-willsberger-anniversary-burgundy-set-4.jpg"
+    },
+    {
+      "id": "3434",
+      "nombre": "Copas Willsberger Bordeaux",
+      "descripcion": "La copa de vino Burdeos Willsberger Anniversary esta diseñada para permitir que los vinos de elaboración meticulosa expresen su esencia en todo su esplendor",
+      "precio_normal": 64000,
+      "precio_promo": 58000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/accesorios/copas-willsberger-anniversary-bordeaux-set-4.jpg"
+    },
+    {
+      "id": "5656",
+      "nombre": "Copas Willsberger Vino Blanco",
+      "descripcion": "La copa destaca por la longitud de su tallo estilizado, perfecto para sostener la copa sin que la mano entre en contacto con el cáliz que contiene el vino. En cuanto al cáliz, este será de menor volumen que el de una copa de vino tinto, ya que los vinos blancos no necesitan demasiado espacio para oxigenarse.",
+      "precio_normal": 64000,
+      "precio_promo": 58000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/accesorios/copas-willsberger-anniversary-vino-blanco-set-4.jpg"
+    },
+    {
+      "id": "7878",
+      "nombre": "Caja de Madera para dos botellas",
+      "descripcion": "Elegante caja de madera de pino tipo dominó para 2 botellas",
+      "precio_normal": 10000,
+      "precio_promo": 7000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/accesorios/caja-de-madera-ewinecl-para-dos-botellas-de-vino.jpg"
+    },
+    {
+      "id": "9090",
+      "nombre": "Maleta de Madera para seis botellas",
+      "descripcion": "Elegante maleta de madera de pino para 6 botellas ",
+      "precio_normal": 20000,
+      "precio_promo": 15000,
+      "imagen": "https://fernandotaladriz.com/curso_frontend/fotos_prueba_vinos/accesorios/maleta-de-madera-ewinecl-para-seis-botellas-de-vino.jpg"
+    }
+  ],
+  "pagedResult": {
+    "page": 1,
+    "size": 10,
+    "total": 12
+  }
+}
