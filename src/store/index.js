@@ -77,6 +77,56 @@ export default createStore({
                 state.totalFinalAccesorios = state.totalAccesorios - state.totalDescuentoAccesorios
             }
         },
+        removeCarro(state, payload) {
+            let id = payload[0]
+            let tipo = payload[1]
+            // el tipo puede ser: 'producto', 'promocion' o 'accesorio'
+            if (tipo === 'producto') {
+                const productoEliminado = state.productos.find(i => i.id === id) //busca el producto a eliminar
+                state.totalProductos -= parseInt(productoEliminado.precio_promo) //resto el valor prod eliminado
+
+                const eliminar = state.carroProductos.findIndex(p=> p === productoEliminado)
+                state.carroProductos.splice(eliminar,1)
+
+                // state.carroProductos = state.carroProductos.filter(i => i.id !== id) //no sirve, elimina todos los prod c/ese id
+                if (state.totalProductos < 100000) {
+                    state.totalDescuentoProductos = parseInt(state.totalProductos * 0.05)
+                } else {
+                    state.totalDescuentoProductos = parseInt(state.totalProductos * 0.11)
+                }
+                state.totalFinalProductos = state.totalProductos - state.totalDescuentoProductos
+            }
+            if (tipo === 'promocion') {
+                const productoEliminado = state.promocion.find(i => i.id === id) //busca el producto a eliminar
+                state.totalPromociones -= parseInt(productoEliminado.precio_promo) //resto el valor prod eliminado
+
+                const eliminar = state.carroPromociones.findIndex(p=> p === productoEliminado)
+                state.carroPromociones.splice(eliminar,1)
+
+                // state.carroPromociones = state.carroPromociones.filter(i => i.id !== id) //no sirve, elimina todos los prod c/ese id
+                if (state.totalPromociones < 100000) {
+                    state.totalDescuentoPromociones = parseInt(state.totalPromociones * 0.05)
+                } else {
+                    state.totalDescuentoPromociones = parseInt(state.totalPromociones * 0.11)
+                }
+                state.totalFinalPromociones = state.totalPromociones - state.totalDescuentoPromociones
+            }
+            if (tipo === 'accesorio') {
+                const productoEliminado = state.accesorios.find(i => i.id === id) //busca el producto a eliminar
+                state.totalAccesorios -= parseInt(productoEliminado.precio_promo) //resto el valor prod eliminado
+
+                const eliminar = state.carroAccesorios.findIndex(p=> p === productoEliminado)
+                state.carroAccesorios.splice(eliminar,1)
+
+                // state.carroAccesorios = state.carroAccesorios.filter(i => i.id !== id) //no sirve, elimina todos los prod c/ese id
+                if (state.totalAccesorios < 100000) {
+                    state.totalDescuentoAccesorios = parseInt(state.totalAccesorios * 0.05)
+                } else {
+                    state.totalDescuentoAccesorios = parseInt(state.totalAccesorios * 0.11)
+                }
+                state.totalFinalAccesorios = state.totalAccesorios - state.totalDescuentoAccesorios
+            }
+        },
         pagar(state) {
             state.carroFinal = []
             state.total = state.totalProductos + state.totalPromociones + state.totalAccesorios

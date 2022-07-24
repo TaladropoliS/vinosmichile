@@ -6,7 +6,7 @@
     </div>
     <div class="col-md-6 mx-auto">
       <div class="card p-5 my-5">
-        <h3>Pagina no encontrada</h3>
+        <h3>Página no encontrada</h3>
       </div>
     </div>
     <div class="col-md-6 mx-auto">
