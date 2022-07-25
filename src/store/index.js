@@ -127,6 +127,44 @@ export default createStore({
                 state.totalFinalAccesorios = state.totalAccesorios - state.totalDescuentoAccesorios
             }
         },
+        removeCarroFinal(state, payload){
+            const productoEliminado = state.productos.find(i => i.id === payload) //busca el producto a eliminar
+            const promocionEliminado = state.promocion.find(i => i.id === payload) //busca el promocion a eliminar
+            const accesorioEliminado = state.accesorios.find(i => i.id === payload) //busca el accesorio a eliminar
+            if(productoEliminado){
+                state.totalProductos -= parseInt(productoEliminado.precio_promo) //resto el valor prod eliminado
+                const eliminar = state.carroProductos.findIndex(p=> p === productoEliminado)
+                state.carroProductos.splice(eliminar,1)
+                if (state.totalProductos < 100000) {
+                    state.totalDescuentoProductos = parseInt(state.totalProductos * 0.05)
+                } else {
+                    state.totalDescuentoProductos = parseInt(state.totalProductos * 0.11)
+                }
+                state.totalFinalProductos = state.totalProductos - state.totalDescuentoProductos
+            }else if (promocionEliminado){
+                let productoEliminado = promocionEliminado
+                state.totalPromociones -= parseInt(productoEliminado.precio_promo) //resto el valor prod eliminado
+                const eliminar = state.carroPromociones.findIndex(p=> p === productoEliminado)
+                state.carroPromociones.splice(eliminar,1)
+                if (state.totalPromociones < 100000) {
+                    state.totalDescuentoPromociones = parseInt(state.totalPromociones * 0.05)
+                } else {
+                    state.totalDescuentoPromociones = parseInt(state.totalPromociones * 0.11)
+                }
+                state.totalFinalPromociones = state.totalPromociones - state.totalDescuentoPromociones
+            }else if(accesorioEliminado){
+                let productoEliminado = accesorioEliminado
+                state.totalAccesorios -= parseInt(productoEliminado.precio_promo) //resto el valor prod eliminado
+                const eliminar = state.carroAccesorios.findIndex(p=> p === productoEliminado)
+                state.carroAccesorios.splice(eliminar,1)
+                if (state.totalAccesorios < 100000) {
+                    state.totalDescuentoAccesorios = parseInt(state.totalAccesorios * 0.05)
+                } else {
+                    state.totalDescuentoAccesorios = parseInt(state.totalAccesorios * 0.11)
+                }
+                state.totalFinalAccesorios = state.totalAccesorios - state.totalDescuentoAccesorios
+            }
+        },
         pagar(state) {
             state.carroFinal = []
             state.total = state.totalProductos + state.totalPromociones + state.totalAccesorios
@@ -141,6 +179,7 @@ export default createStore({
             for (let k of state.carroAccesorios) {
                 state.carroFinal.push(k)
             }
+            // console.log(state.carroFinal)
             // console.log(state.total)
             // console.log(state.totalDescuentos)
             // console.log(state.totalAPagar)

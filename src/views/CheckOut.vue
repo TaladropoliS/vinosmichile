@@ -14,63 +14,76 @@
             <form>
               <h3>Datos del Comprador</h3>
               <hr>
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input v-model.trim="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input v-model.trim="nombre" type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="telefono" class="form-label">Teléfono (solo números)</label>
+                  <input v-model.trim="telefono" type="text" class="form-control" id="telefono" placeholder="56912345678"
+                         required>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input v-model.trim="email" type="email" class="form-control" id="email" placeholder="Email" required>
-              </div>
-              <div class="mb-3">
-                <label for="reemail" class="form-label">Repetir Email</label>
-                <input v-model.trim="reemail" type="email" class="form-control" id="reemail" placeholder="Reingresar Email"
-                       required>
-              </div>
-              <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono (solo números)</label>
-                <input v-model.trim="telefono" type="text" class="form-control" id="telefono" placeholder="56912345678"
-                       required>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input v-model.trim="email" type="email" class="form-control" id="email" placeholder="Email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="reemail" class="form-label">Repetir Email</label>
+                  <input v-model.trim="reemail" type="email" class="form-control" id="reemail" placeholder="Reingresar Email"
+                         required>
+                </div>
               </div>
 
               <h3>Datos de Despacho</h3>
               <hr>
-              <div class="mb-3">
-                <label for="direccion" class="form-label">Dirección</label>
-                <input v-model.trim="direccion" type="text" class="form-control" id="direccion" placeholder="Dirección"
-                       required>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <input v-model.trim="direccion" type="text" class="form-control" id="direccion" placeholder="Dirección"
+                         required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="comuna" class="form-label">Comuna</label>
+                  <input v-model.trim="comuna" type="text" class="form-control" id="comuna" placeholder="Comuna" required>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="comuna" class="form-label">Comuna</label>
-                <input v-model.trim="comuna" type="text" class="form-control" id="comuna" placeholder="Comuna" required>
-              </div>
-
               <h3>Forma de Pago</h3>
               <hr>
-              <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3 mx-auto">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="transferencia" checked>
-                  <label class="form-check-label" for="transferencia">
-                    Transferencia
-                  </label>
+              <!--              <div class="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3 mx-auto">-->
+              <div class="col-7 col-md-10 col-lg-8 col-xl-6 mx-auto">
+                <div class="row">
+                  <div class="col-md-5 form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="transferencia" checked>
+                    <label class="form-check-label" for="transferencia">
+                      Transferencia
+                    </label>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-5 form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="servipag">
+                    <label class="form-check-label" for="servipag">
+                      Servipag
+                    </label>
+                  </div>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="servipag">
-                  <label class="form-check-label" for="servipag">
-                    Servipag
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="webpay">
-                  <label class="form-check-label" for="webpay">
-                    Webpay
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="alaentrega">
-                  <label class="form-check-label" for="alaentrega">
-                    Contra entrega
-                  </label>
+                <div class="row">
+                  <div class="col-md-5 form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="webpay">
+                    <label class="form-check-label" for="webpay">
+                      Webpay
+                    </label>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-5 form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="alaentrega">
+                    <label class="form-check-label" for="alaentrega">
+                      Contra entrega
+                    </label>
+                  </div>
                 </div>
               </div>
               <hr>
@@ -95,6 +108,9 @@
                 <p class="m-0 p-0">{{ carro.nombre }}<br>
                   $ {{ carro.precio_promo.toLocaleString() }}
                 </p>
+                <span class="btn pt-1" @click="removeCarroFinal(carro.id)">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
               </div>
             </div>
           </div>
@@ -153,6 +169,10 @@
       ...mapState((['carroFinal', 'total', 'totalDescuentos', 'totalAPagar']))
     },
     methods: {
+      removeCarroFinal(id) {
+        this.$store.commit('removeCarroFinal', id)
+        this.$store.commit('pagar')
+      },
       submit() {
         if (!this.nombre.length || !this.email.length || !this.reemail.length ||
             !this.telefono.length || !this.direccion.length || !this.comuna.length) {

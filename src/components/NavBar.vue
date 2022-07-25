@@ -24,6 +24,14 @@
             <router-link class="nav-link active" to="/accesorios">Accesorios</router-link>
           </li>
 
+          <li
+              v-if="carroProductos.length || carroPromociones.length || carroAccesorios.length"
+              class="nav-item">
+            <span @click="pagar" class="nav-link">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -31,6 +39,8 @@
 </template>
 
 <script>
+  import {mapState} from "vuex";
+
   export default {
     name: "NavBar",
     data() {
@@ -38,7 +48,15 @@
         mostrar: false
       }
     },
-    methods: {}
+    methods: {
+      pagar() {
+        this.$store.commit('pagar')
+        this.$router.push('checkout')
+      }
+    },
+    computed: {
+      ...mapState(['carroProductos', 'carroPromociones', 'carroAccesorios'])
+    }
   }
 
 </script>
